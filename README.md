@@ -4,17 +4,22 @@ A blank starter theme. Preview: [https://starter-blank-preview.lamnhan.com](http
 
 ## Getting started
 
-To use this theme, clone this repo, or using [Mola CMS](https://mola.lamnhan.com):
+To use this theme, clone this repo, or using [the Mola all-in-one CLI](https://mola.lamnhan.com):
 
 ```sh
-mola new blank <projectName>
+npx @molacms/cli new blank <projectName>
 
-# Params & options:
-# mola new blank <projectName> [appUrl] [appName] [appDescription] --i18n --github/firebase/netlify
+# CLI params & options:
+# mola new blank <projectName> [appUrl] [appName] [appDescription] --i18n --deploy [service]
 
 # Example:
-# mola new blank foo "foo.com" "Foo App" "The Awesome Foo Web App" --github
+# mola new blank foo "foo.com" "Foo App" "The Awesome Foo Web App" --deploy github
 ```
+
+Project scripts:
+
+- `npm run build`: build the web app
+- `npm run deploy`: deploy the web app
 
 ## Modify content
 
@@ -24,7 +29,7 @@ You may also want to modify or delete these items:
 
 Want to support multiple themes with [Unistylus](https://unistylus.lamnhan.com):
 
-- **TODO**: ...
+**// TODO**: Add docs ...
 
 ## Add content
 
