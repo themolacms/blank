@@ -1,14 +1,32 @@
 {
-  "name": "starter-blank",
+  "name": "@molacms/starter-blank",
   "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
+  "description": "The Starter Blank theme",
+  "author": "Lam Nhan",
+  "homepage": "https://starter-blank-preview.lamnhan.com",
+  "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "npx ng build",
+    "deploy": "git add . && git commit -m 'deploy:app' && git push",
+    "test": "echo 'test'",
+    "lint": "echo 'lint'",
+    "e2e": "echo 'e2e'"
+  },
+  "keywords": [
+    "lamnhan",
+    "angular",
+    "firebase",
+    "nguix",
+    "webapp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themolacms/starter-blank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/themolacms/starter-blank/issues"
+  },
   "dependencies": {
     "@angular/animations": "~12.0.1",
     "@angular/common": "~12.0.1",
@@ -18,6 +36,10 @@
     "@angular/platform-browser": "~12.0.1",
     "@angular/platform-browser-dynamic": "~12.0.1",
     "@angular/router": "~12.0.1",
+    "@lamnhan/ngx-useful": "0.0.8",
+    "@lamnhan/schemata": "0.0.7",
+    "@lamnhan/unistylus": "0.0.7",
+    "@lamnhan/nguix-starter": "0.0.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"

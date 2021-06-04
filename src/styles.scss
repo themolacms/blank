@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**
+ * ====================================================
+ * 3rd parties
+ * ====================================================
+ */
+
+// ...
+
+/**
+ * ====================================================
+ * Unistylus
+ * ====================================================
+ */
+
+// use light theme
+@import '@lamnhan/unistylus/src/scss/unistylus-light';
+
+// register app styles
+@import './theming/app.module';
+
+/**
+ * ====================================================
+ * Global styles 
+ * ====================================================
+ */
+
+// ...

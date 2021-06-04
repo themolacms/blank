@@ -1,27 +1,45 @@
-# StarterBlank
+# Starter Blank Theme
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+A blank starter theme. Preview: [https://starter-blank-preview.lamnhan.com](https://starter-blank-preview.lamnhan.com)
 
-## Development server
+## Getting started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To use this theme, clone this repo, or using [Mola CMS](https://mola.lamnhan.com):
 
-## Code scaffolding
+```sh
+mola new blank <projectName>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Params & options:
+# mola new blank <projectName> [appUrl] [appName] [appDescription] --i18n --github/firebase/netlify
 
-## Build
+# Example:
+# mola new blank foo "foo.com" "Foo App" "The Awesome Foo Web App" --github
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Modify content
 
-## Running unit tests
+You may also want to modify or delete these items:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **package.json**: Change properties
 
-## Running end-to-end tests
+Want to support multiple themes with [Unistylus](https://unistylus.lamnhan.com):
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **TODO**: ...
 
-## Further help
+## Add content
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Add a component (manually adding `[name].module.ts` after the command):
+
+```sh
+npx ng g c components/[name] --skip-import
+```
+
+- Add a page:
+
+```sh
+npx ng g m pages/[name] --route [name] --module app.module
+```
+
+## License
+
+This theme is released under the [MIT](https://github.com/themolacms/starter-blank/blob/master/LICENSE) license.
