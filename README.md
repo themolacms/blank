@@ -10,7 +10,7 @@ To use this theme, clone this repo, or using [the Mola all-in-one CLI](https://m
 npx @molacms/cli new blank <projectName>
 
 # CLI params & options:
-# mola new blank <projectName> [appUrl] [appName] [appDescription] --i18n --deploy [service]
+# mola new blank <projectName> [appDomain] [appName] [appDescription] --themes [list] --locales [list] --deploy [service]
 
 # Example:
 # mola new blank foo "foo.com" "Foo App" "The Awesome Foo Web App" --deploy github
@@ -23,13 +23,11 @@ Project scripts:
 
 ## Modify content
 
-You may also want to modify or delete these items:
+Optionally, you may also want to modify:
 
-- **package.json**: Change properties
-
-Want to support multiple themes with [Unistylus](https://unistylus.lamnhan.com):
-
-**// TODO**: Add docs ...
+- **LICENSE**: anything
+- **package.json**: Change `name`, `description`, `author`, `homepage`, `license`, `keywords`, `repository`, `bugs`
+- **src/index.html**: Change `author`, `twitter:site`, `twitter:creator`, `fb:app_id`
 
 ## Add content
 
