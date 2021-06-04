@@ -26,7 +26,7 @@ Project scripts:
 Optionally, you may also want to modify:
 
 - **LICENSE**: anything
-- **package.json**: Change `name`, `description`, `author`, `homepage`, `license`, `keywords`, `repository`, `bugs`
+- **package.json**: Change `author`, `license`, `keywords`, `repository`, `bugs`
 - **src/index.html**: Change `author`, `twitter:site`, `twitter:creator`, `fb:app_id`
 
 ## Add content
