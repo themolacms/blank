@@ -1,10 +1,11 @@
 {
-  "vendor": {
-    "projectName": "starter-blank",
-    "domain": "starter-blank-preview.lamnhan.com",
-    "name": "A Mola Theme Preview",
-    "description": "The Mola theme preview decription.",
-    "themes": ["light"],
-    "locales": ["en-US"]
+  "projectName": "starter-blank",
+  "domain": "starter-blank-preview.lamnhan.com",
+  "name": "A Mola Theme Preview",
+  "description": "The Mola theme preview decription.",
+  "themes": ["light"],
+  "locales": ["en-US"],
+  "backend": {
+    "provider": "none"
   }
 }
