@@ -1,11 +1,10 @@
 @import '@lamnhan/unistylus/scss/mixins';
-$icon_host: 'https://icons.getbootstrap.com/assets/icons';
 
 $shared_icons: ();
 
 $light_theme_icons: (
-  menu: '#{$icon_host}/list.svg',
-  smile: '#{$icon_host}/emoji-smile.svg',
+  menu: '#{$builtin_icons}/light/list.svg',
+  smile: '#{$builtin_icons}/light/emoji-smile.svg',
 );
 
 @include register_app_icons(
