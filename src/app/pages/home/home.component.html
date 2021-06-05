@@ -1,1 +1,9 @@
-<h2 class="padding-3x">Hello, world!</h2>
+<ng-container *transloco="let t">
+
+  <section class="padding-3x">
+    <h1><i class="icon-3x icon-smile"></i></h1>
+    <h2>{{ t('HELLO') }}, {{ t('WORLD') }}!</h2>
+    <p>This is your app home page.</p>
+  </section>
+
+</ng-container>

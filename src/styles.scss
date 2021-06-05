@@ -14,10 +14,16 @@
  * ====================================================
  */
 
-// use light theme
-@import '@lamnhan/unistylus/src/scss/unistylus-light';
+// register themes
+@import '@lamnhan/unistylus/src/scss/themes/light-default';
 
-// register app styles
+// modify themes
+// :root, [data-theme=default], [data-theme=light] {}
+
+// register parts (everything)
+@import '@lamnhan/unistylus/src/scss/setup';
+
+// register app
 @import './theming/app.module';
 
 /**

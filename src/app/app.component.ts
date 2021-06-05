@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 import {
   MenuItem,
   // normal services
   LocalstorageService,
+  CacheService,
   AppService,
   MetaService,
   NavService,
@@ -18,8 +20,8 @@ import {
 export class AppComponent {
 
   headerMenu: MenuItem[] = [
-    { text: 'Home', routerLink: [] },
-    { text: 'About', routerLink: ['about'] },
+    { text: 'APP.HOME', routerLink: [] },
+    { text: 'APP.ABOUT', routerLink: ['about'] },
   ];
 
   footerMenu: MenuItem[] = [
@@ -29,17 +31,20 @@ export class AppComponent {
   ];
   
   constructor(
-    private localstorageService: LocalstorageService,
-    private appService: AppService,
-    private metaService: MetaService,
+    private translateService: TranslocoService,
+    public localstorageService: LocalstorageService,
+    public cacheService: CacheService,
+    public appService: AppService,
+    public metaService: MetaService,
     public navService: NavService,
-    private settingService: SettingService,
+    public settingService: SettingService,
   ) {
     this.initialize();
   }
 
   private initialize() {
     this.localstorageService.init();
+    this.cacheService.init();
     this.appService.init({ splashScreen: true });
     this.settingService.init(
       {
@@ -48,6 +53,7 @@ export class AppComponent {
       {},
       {
         localstorageService: this.localstorageService,
+        translateService: this.translateService,
       },
     );
     this.navService.init(
@@ -64,6 +70,8 @@ export class AppComponent {
         ogLocale: 'en-US',
         ogSiteName: 'A Mola Theme Preview'
       },
+      {},
+      { settingService: this.settingService },
     );
   }
 
