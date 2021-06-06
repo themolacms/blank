@@ -26,7 +26,7 @@ import { AppComponent } from './app.component';
     NguixFooterComponentModule,
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'en-US' },
+    {provide: LOCALE_ID, useValue: 'en-US'},
     LocalstorageService,
     CacheService,
     AppService,

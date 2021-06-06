@@ -68,10 +68,10 @@ export class AppComponent {
         url: 'https://starter-blank-preview.lamnhan.com/',
         lang: 'en',
         ogLocale: 'en-US',
-        ogSiteName: 'A Mola Theme Preview'
       },
       {},
       { settingService: this.settingService },
+      /* Meta Translations Here */
     );
   }
 
