@@ -14,24 +14,24 @@
  * ====================================================
  */
 
-// register themes
-@import '@lamnhan/unistylus/scss/themes/light-default';
+// register skins
+@import '@lamnhan/unistylus/scss/skins/light-default';
 
-// modify the default theme
+// modify "default" skin
 // :root,
 // [data-theme=default],
 // [data-theme=light]
 // {}
 
-// register parts
-@import '@lamnhan/unistylus/scss/full';
+// register soul
+@import '@lamnhan/unistylus/scss/souls/bootstrap/full';
 
 // register app
 @import './theming/app.module';
 
 /**
  * ====================================================
- * Global styles 
+ * App styles 
  * ====================================================
  */
 

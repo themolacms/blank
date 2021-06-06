@@ -63,7 +63,7 @@ export class AppComponent {
     this.metaService.init(
       {
         title: 'A Mola Theme Preview',
-        description: 'The Mola theme preview decription.',
+        description: 'The Mola theme preview description.',
         image: 'https://starter-blank-preview.lamnhan.com/assets/images/featured.jpg',
         url: 'https://starter-blank-preview.lamnhan.com/',
         lang: 'en',
@@ -71,7 +71,7 @@ export class AppComponent {
       },
       {},
       { settingService: this.settingService },
-      /* Meta Translations Here */
+      /* MOLA:META_TRANSLATIONS */
     );
   }
 

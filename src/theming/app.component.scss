@@ -3,8 +3,8 @@
 $shared_icons: ();
 
 $light_theme_icons: (
-  menu: '#{$builtin_icons}/light/list.svg',
-  smile: '#{$builtin_icons}/light/emoji-smile.svg',
+  menu: '#{$bootstrap_icons}/light/list.svg',
+  smile: '#{$bootstrap_icons}/light/emoji-smile.svg',
 );
 
 @include register_app_icons(

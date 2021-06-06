@@ -1,7 +1,7 @@
 {
   "name": "starter-blank",
   "version": "0.0.0",
-  "description": "The Mola theme preview decription.",
+  "description": "The Mola theme preview description.",
   "author": "Lam Nhan",
   "homepage": "https://starter-blank-preview.lamnhan.com",
   "license": "MIT",
@@ -38,7 +38,7 @@
     "@angular/router": "~12.0.1",
     "@lamnhan/ngx-useful": "0.0.8",
     "@lamnhan/schemata": "0.0.7",
-    "@lamnhan/unistylus": "0.0.8",
+    "@lamnhan/unistylus": "0.0.10",
     "@lamnhan/nguix-starter": "0.0.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
