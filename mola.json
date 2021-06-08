@@ -1,8 +1,9 @@
 {
   "projectName": "starter-blank",
   "domain": "starter-blank-preview.lamnhan.com",
-  "name": "A Mola Theme Preview",
-  "description": "The Mola theme preview description.",
+  "name": "Starter Blank Preview",
+  "description": "The Starter Blank theme preview.",
+  "deployTarget": "github",
   "locales": ["en-US"],
   "skins": ["light"],
   "soul": "bootstrap"

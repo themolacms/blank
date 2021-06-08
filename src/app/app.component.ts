@@ -62,8 +62,8 @@ export class AppComponent {
     );
     this.metaService.init(
       {
-        title: 'A Mola Theme Preview',
-        description: 'The Mola theme preview description.',
+        title: 'Starter Blank Preview',
+        description: 'The Starter Blank theme preview.',
         image: 'https://starter-blank-preview.lamnhan.com/assets/images/featured.jpg',
         url: 'https://starter-blank-preview.lamnhan.com/',
         lang: 'en',
