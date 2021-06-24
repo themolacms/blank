@@ -45,32 +45,29 @@ export class AppComponent {
   private initialize() {
     this.localstorageService.init();
     this.cacheService.init();
-    this.appService.init({ splashScreen: true });
-    this.settingService.init(
-      {
+    this.appService.setOptions({ splashScreen: true }).init();
+    this.settingService
+      .setOptions({
         onReady: () => this.appService.hideSplashScreen(),
-      },
-      {},
-      {
+      })
+      .setIntegrations({
         localstorageService: this.localstorageService,
         translateService: this.translateService,
-      },
-    );
-    this.navService.init(
-      {},
-      { settingService: this.settingService },
-    );
-    this.metaService.init(
+      })
+      .init();
+    this.navService
+      .setIntegrations({ settingService: this.settingService })
+      .init();
+    this.metaService
+    .setIntegrations({ settingService: this.settingService })
+    .init(
       {
+        url: 'https://starter-blank-preview.lamnhan.com/',
         title: 'Starter Blank Preview',
         description: 'The Starter Blank theme preview.',
         image: 'https://starter-blank-preview.lamnhan.com/assets/images/featured.jpg',
-        url: 'https://starter-blank-preview.lamnhan.com/',
-        lang: 'en',
-        ogLocale: 'en-US',
+        locale: 'en-US',
       },
-      {},
-      { settingService: this.settingService },
       /* MOLA:META_TRANSLATIONS */
     );
   }

@@ -1,8 +1,15 @@
 {
-  "svg.preview.background": "transparent",
   "files.exclude": {
     ".vscode/": true,
     "dist/": true,
-    "docs/": true
+    "docs/": true,
+    "firebase/public": true,
+    "firebase/.firebase": true,
+    "firebase/.firebaserc": true,
+    "firebase/.gitignore": true,
+    "firebase/key.json": true,
+    "ngxer/path_cached": true,
+    "ngxer/database_cached": true,
+    "ngxer/report.json": true
   }
 }

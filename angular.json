@@ -33,12 +33,16 @@
               "src/favicon.ico",
               "src/assets",
               "src/404.html",
-              "src/CNAME"
+              "src/CNAME",
+              "src/robots.txt"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@lamnhan/nguix-starter/splashscreens/heartbeat/index.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@lamnhan/nguix-starter/splashscreens/heartbeat/index.js"
+            ]
           },
           "configurations": {
             "production": {

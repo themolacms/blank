@@ -15,7 +15,7 @@
  */
 
 // register skins
-@import '@lamnhan/unistylus/scss/skins/light-default';
+@import '@unistylus/core/scss/skins/light-default';
 
 // modify "default" skin
 // :root,
@@ -24,7 +24,10 @@
 // {}
 
 // register soul
-@import '@lamnhan/unistylus/scss/souls/bootstrap/full';
+@import '@unistylus/bootstrap/reset';
+@import '@unistylus/bootstrap/core';
+@import '@unistylus/bootstrap/content/typography';
+@import '@unistylus/bootstrap/components/icon';
 
 // register app
 @import './theming/app.module';

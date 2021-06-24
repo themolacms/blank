@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MetaService } from '@lamnhan/ngx-useful';
 
 @Component({
@@ -6,15 +6,10 @@ import { MetaService } from '@lamnhan/ngx-useful';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
 
   constructor(private metaService: MetaService) {}
 
   ngOnInit(): void {
   }
-
-  ngAfterViewInit() {
-    this.metaService.changePageMetas();
-  }
-
 }
