@@ -51,8 +51,8 @@ export class AppComponent {
         onReady: () => this.appService.hideSplashScreen(),
       })
       .setDefaults({
-        theme: 'light' /*MOLA:DEFAULT*/,
-        locale: 'en-US' /*MOLA:DEFAULT*/,
+        theme: 'light',
+        locale: 'en-US',
         persona: 'default',
       })
       .setIntegrations({
