@@ -50,6 +50,11 @@ export class AppComponent {
       .setOptions({
         onReady: () => this.appService.hideSplashScreen(),
       })
+      .setDefaults({
+        theme: 'light' /*MOLA:DEFAULT*/,
+        locale: 'en-US' /*MOLA:DEFAULT*/,
+        persona: 'default',
+      })
       .setIntegrations({
         localstorageService: this.localstorageService,
         translateService: this.translateService,
