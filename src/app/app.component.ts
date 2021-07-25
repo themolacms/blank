@@ -68,8 +68,8 @@ export class AppComponent {
     .init(
       {
         url: 'https://blank-preview.lamnhan.com/',
-        title: 'Starter Blank Preview',
-        description: 'The Starter Blank theme preview.',
+        title: 'Blank Preview',
+        description: 'The Blank theme preview.',
         image: 'https://blank-preview.lamnhan.com/assets/images/featured.jpg',
         locale: 'en-US',
       },

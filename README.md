@@ -1,6 +1,6 @@
-# Starter Blank Theme
+# Blank Theme
 
-A blank starter theme. Preview: [https://blank-preview.lamnhan.com](https://blank-preview.lamnhan.com)
+A blank theme. Preview: [https://blank-preview.lamnhan.com](https://blank-preview.lamnhan.com)
 
 ## Getting started
 
