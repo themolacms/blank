@@ -1,15 +1,3 @@
 @import '@unistylus/core/scss/mixins';
 
-$shared_icons: ();
-
-$light_theme_icons: (
-  menu: '#{$bootstrap_icons}/light/list.svg',
-  smile: '#{$bootstrap_icons}/light/emoji-smile.svg',
-);
-
-@include register_app_icons(
-  (
-    light: $light_theme_icons,
-    default: map-merge($shared_icons, $light_theme_icons),
-  )
-);
+// theme icon or properties here

@@ -7,7 +7,11 @@ A blank theme. Preview: [https://blank-preview.lamnhan.com](https://blank-previe
 To use this theme, clone this repo, or using [the Mola all-in-one CLI](https://mola.lamnhan.com):
 
 ```sh
-npx @molacms/cli new blank <projectName>
+# Install Mola all-in-one CLI
+npm i -g @molacms/cli
+
+# Create a new project
+mola new blank <projectName>
 
 # CLI params & options:
 # mola new blank <projectName> [appDomain] [appName] [appDescription] --themes [list] --locales [list] --deploy [service]
