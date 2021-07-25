@@ -1,9 +1,9 @@
 {
-  "name": "starter-blank",
+  "name": "blank",
   "version": "0.0.0",
   "description": "The Starter Blank theme preview.",
   "author": "Lam Nhan",
-  "homepage": "https://starter-blank-preview.lamnhan.com",
+  "homepage": "https://blank-preview.lamnhan.com",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -23,10 +23,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/themolacms/starter-blank.git"
+    "url": "https://github.com/themolacms/blank.git"
   },
   "bugs": {
-    "url": "https://github.com/themolacms/starter-blank/issues"
+    "url": "https://github.com/themolacms/blank/issues"
   },
   "dependencies": {
     "@angular/animations": "~12.0.3",

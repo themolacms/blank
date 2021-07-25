@@ -1,6 +1,6 @@
 {
-  "projectName": "starter-blank",
-  "domain": "starter-blank-preview.lamnhan.com",
+  "projectName": "blank",
+  "domain": "blank-preview.lamnhan.com",
   "name": "Starter Blank Preview",
   "description": "The Starter Blank theme preview.",
   "deployTarget": "github",

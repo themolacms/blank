@@ -1,6 +1,6 @@
 # Starter Blank Theme
 
-A blank starter theme. Preview: [https://starter-blank-preview.lamnhan.com](https://starter-blank-preview.lamnhan.com)
+A blank starter theme. Preview: [https://blank-preview.lamnhan.com](https://blank-preview.lamnhan.com)
 
 ## Getting started
 
@@ -45,4 +45,4 @@ npx ng g m pages/[name] --route [name] --module app.module
 
 ## License
 
-This theme is released under the [MIT](https://github.com/themolacms/starter-blank/blob/master/LICENSE) license.
+This theme is released under the [MIT](https://github.com/themolacms/blank/blob/master/LICENSE) license.

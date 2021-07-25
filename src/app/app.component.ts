@@ -27,7 +27,7 @@ export class AppComponent {
   footerMenu: MenuItem[] = [
     { text: 'Lam Nhan', href: 'https://lamnhan.com', target: '_blank' },
     { text: 'Mola CMS', href: 'https://mola.lamnhan.com', target: '_blank' },
-    { text: 'Source code', href: 'https://github.com/themolacms/starter-blank', target: '_blank' }
+    { text: 'Source code', href: 'https://github.com/themolacms/blank', target: '_blank' }
   ];
   
   constructor(
@@ -67,10 +67,10 @@ export class AppComponent {
     .setIntegrations({ settingService: this.settingService })
     .init(
       {
-        url: 'https://starter-blank-preview.lamnhan.com/',
+        url: 'https://blank-preview.lamnhan.com/',
         title: 'Starter Blank Preview',
         description: 'The Starter Blank theme preview.',
-        image: 'https://starter-blank-preview.lamnhan.com/assets/images/featured.jpg',
+        image: 'https://blank-preview.lamnhan.com/assets/images/featured.jpg',
         locale: 'en-US',
       },
       /* MOLA:META_TRANSLATIONS */

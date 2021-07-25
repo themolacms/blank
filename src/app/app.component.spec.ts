@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'starter-blank'`, () => {
+  it(`should have as title 'blank'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('starter-blank');
+    expect(app.title).toEqual('blank');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('starter-blank app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('blank app is running!');
   });
 });
