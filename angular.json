@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blank-app": {
+    "mola-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -34,15 +34,21 @@
               "src/assets",
               "src/404.html",
               "src/CNAME",
+              "src/icons",
+              "src/manifests",
               "src/robots.txt"
             ],
             "styles": [
+              "node_modules/@lamnhan/nguix-starter/splashscreens/heartbeat/index.scss",
               "src/styles.scss",
-              "node_modules/@lamnhan/nguix-starter/splashscreens/heartbeat/index.scss"
+              "dist/blank/styles.scss",
+              "node_modules/@lamnhan/nguix-dashboard/styles.scss"
             ],
             "scripts": [
               "node_modules/@lamnhan/nguix-starter/splashscreens/heartbeat/index.js"
-            ]
+            ],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -81,10 +87,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "blank-app:build:production"
+              "browserTarget": "mola-app:build:production"
             },
             "development": {
-              "browserTarget": "blank-app:build:development"
+              "browserTarget": "mola-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,7 +98,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blank-app:build"
+            "browserTarget": "mola-app:build"
           }
         },
         "test": {
@@ -119,7 +125,7 @@
       "projectType": "library",
       "root": "projects/blank",
       "sourceRoot": "projects/blank/src",
-      "prefix": "lib",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -147,5 +153,5 @@
       }
     }
   },
-  "defaultProject": "blank-app"
+  "defaultProject": "mola-app"
 }

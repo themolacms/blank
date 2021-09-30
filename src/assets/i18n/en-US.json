@@ -3,6 +3,7 @@
   "WORLD": "world",
   "APP": {
     "HOME": "Home",
-    "ABOUT": "About"
+    "ABOUT": "About",
+    "HELP": "Help"
   }
 }

@@ -1,39 +1,74 @@
-import { NgModule, LOCALE_ID } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import {
-  LocalstorageService,
-  CacheService,
-  AppService,
-  MetaService,
-  NavService,
-  SettingService,
-} from '@lamnhan/ngx-useful';
-import { NguixHeaderComponentModule, NguixFooterComponentModule } from '@lamnhan/nguix-starter';
+import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { AngularFireModule } from '@angular/fire/compat';
+import { MolaAppDashboardModule } from '../../projects/blank/src/lib/app-dashboard.module';
 
+import { MolaAppModule } from '../../projects/blank/src/lib/app.module';
+import { AppComponent } from '../../projects/blank/src/lib/app.component';
+import { OfflineComponent } from './offline/offline.component';
+
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
-import { AppTranslationModule } from './app-translation.module';
-import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  bootstrap: [AppComponent],
+  declarations: [OfflineComponent],
   imports: [
-    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
+    MolaAppModule.forRoot({
+      name: environment.name,
+      version: environment.version,
+      production: environment.production,
+      // firebase
+      firebase: environment.firebase,
+      // i18n
+      translocoConfig: {
+        availableLangs: ['en-US'],
+        defaultLang: 'en-US',
+        fallbackLang: 'en-US',
+        reRenderOnLangChange: true,
+        prodMode: environment.production,
+      },
+      // SettingService
+      settingService: {
+        defaultSettings: {
+          theme: 'light',
+          locale: 'en-US',
+          persona: 'default',
+        },
+        listing: {
+          themes: [
+            { text: 'THEME.LIGHT', value: 'light' },
+          ],
+          personas: [
+            { text: 'PERSONA.DEFAULT', value: 'default' },
+            { text: 'PERSONA.DASHBOARD', value: 'dashboard' }
+          ],
+          locales: [
+            { text: 'English', value: 'en-US' },
+          ],
+        },
+      },
+      // MetaService
+      metaService: {
+        defaultMetas: {
+          url: 'https://blank-preview.lamnhan.com/',
+          title: 'Blank Theme',
+          description: 'The Blank theme',
+          image: 'https://blank-preview.lamnhan.com/assets/images/featured.jpg',
+          locale: 'en-US',
+        },
+        /* MOLA:META_TRANSLATIONS */
+      }
+    }),
+    MolaAppDashboardModule,
     AppRoutingModule,
-    AppTranslationModule,
-    NguixHeaderComponentModule,
-    NguixFooterComponentModule,
   ],
-  providers: [
-    {provide: LOCALE_ID, useValue: 'en-US'},
-    LocalstorageService,
-    CacheService,
-    AppService,
-    MetaService,
-    NavService,
-    SettingService,
-  ],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

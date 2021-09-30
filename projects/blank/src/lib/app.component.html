@@ -1,0 +1,17 @@
+<nguix-header
+  *ngIf="personaService.name !== 'dashboard'; else dashBoardHeader;"
+  [i18n]="true"
+  [menuItems]="personaService.menu"
+  [NAME]="'HELLO' | transloco"
+></nguix-header>
+<ng-template #dashBoardHeader>
+  <nguix-dashboard-header></nguix-dashboard-header>
+</ng-template>
+
+<main id="page-container">
+  <router-outlet></router-outlet>
+</main>
+
+<nguix-network-indicator [i18n]="true"></nguix-network-indicator>
+<nguix-nav-indicator [i18n]="true"></nguix-nav-indicator>
+<nguix-pwa-reminder [i18n]="true"></nguix-pwa-reminder>
