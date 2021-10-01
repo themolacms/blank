@@ -1,7 +1,7 @@
 {
   "domain": "blank-preview.lamnhan.com",
-  "name": "Blank Preview",
-  "description": "The Blank theme preview.",
+  "name": "Blank Theme",
+  "description": "The Blank theme",
   "deployTarget": "github",
   "locales": ["en-US"],
   "skins": ["light"],
