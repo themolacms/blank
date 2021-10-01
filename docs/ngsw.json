@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1633053541944,
+  "timestamp": 1633082154910,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,8 +11,8 @@
         "ignoreVary": true
       },
       "urls": [
-        "/399.655c340a00e8b5f27ad2.js",
-        "/492.91a333f94d7af8a169fc.js",
+        "/399.6b90cce99edaec775d70.js",
+        "/492.960f179501dfe1833179.js",
         "/favicon.ico",
         "/icons/icon-128x128.png",
         "/icons/icon-144x144.png",
@@ -25,14 +25,14 @@
         "/icons/icon-72x72.png",
         "/icons/icon-96x96.png",
         "/index.html",
-        "/main.06204ee5a326ce5c908f.js",
+        "/main.5aef406911569e86a669.js",
         "/manifests/en-US.webmanifest",
         "/ngsw-worker.js",
-        "/polyfills.4e6e069dbc292e573b2f.js",
-        "/runtime.428de493bc6fbc687c73.js",
+        "/polyfills.e9f9b55e038fb9963079.js",
+        "/runtime.f4e09d4d0df3d82d5b01.js",
         "/safety-worker.js",
         "/scripts.ec416e3af19e2d96565e.js",
-        "/styles.0abd706c3e6a04f289c6.css",
+        "/styles.7bd212af78c7901ce232.css",
         "/worker-basic.min.js"
       ],
       "patterns": []
@@ -60,8 +60,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/399.655c340a00e8b5f27ad2.js": "26da6a0af6ee3ea0241ef9abe4353af1bc3f2fcf",
-    "/492.91a333f94d7af8a169fc.js": "7eb8c60a8e17fbc3b8f07ee597e3b3c9bf68de75",
+    "/399.6b90cce99edaec775d70.js": "c80ed90ac1507f872806ff6f4ac18415e3cb55e9",
+    "/492.960f179501dfe1833179.js": "20d8bf4d23156d860e9d8bb32fc034dd738d3b41",
     "/assets/i18n/en-US.json": "c9406f353ea13594ef56c8ff14dc1fe1d92a2d9e",
     "/assets/i18n/nguix-nav-indicator/en-US.json": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
     "/assets/i18n/nguix-network-indicator/en-US.json": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
@@ -82,15 +82,15 @@
     "/icons/icon-512x512.png": "de9f797be2a6a2d5a9adc72c62bfb5f849c8b057",
     "/icons/icon-72x72.png": "4253a44eb4712a06858b4374fa51d98a37e96e68",
     "/icons/icon-96x96.png": "067609b320de1c03f496022bf9e993fd8d2e254d",
-    "/index.html": "cdbd00114fa70818cac8169a53ab091e619ad9af",
-    "/main.06204ee5a326ce5c908f.js": "b5c846cc7c04d9ec175a281a483504fe795b1487",
-    "/manifests/en-US.webmanifest": "b2b769e4a29205aea81d34347bf139c33c6a943c",
+    "/index.html": "af22e6be8cdbaa1093fdb7f0ada81b59741b6e39",
+    "/main.5aef406911569e86a669.js": "9a0343d95128371d1d2df1156466594728f749fe",
+    "/manifests/en-US.webmanifest": "3ee71de7a71b91e2613041c8f01839c3edcd4f5e",
     "/ngsw-worker.js": "a666ac3c0ab0346ef69e521c61375645c5abc1d1",
-    "/polyfills.4e6e069dbc292e573b2f.js": "7bc1a5503be81e10db09bbba31c1d2f2212d52e8",
-    "/runtime.428de493bc6fbc687c73.js": "8ea7facc32e8b21df01be168b9a613d8bce87fc2",
+    "/polyfills.e9f9b55e038fb9963079.js": "88a1ad6e008699a0cdcd048670f69e52d1ff57e2",
+    "/runtime.f4e09d4d0df3d82d5b01.js": "a9325990fada9e001dc8188ec936871d8870eda0",
     "/safety-worker.js": "70914dc203fa1f881e56f2b794d7a4f9c48ee745",
     "/scripts.ec416e3af19e2d96565e.js": "7d8a47443d00391009351384abbf4c140e795351",
-    "/styles.0abd706c3e6a04f289c6.css": "ccbe8739a67771b6885e366ca60b46d8a0e3fae9",
+    "/styles.7bd212af78c7901ce232.css": "f5b6a12296189d70e35e8d7fba2ccf70288a64b1",
     "/worker-basic.min.js": "70914dc203fa1f881e56f2b794d7a4f9c48ee745"
   },
   "navigationUrls": [
