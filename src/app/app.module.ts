@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AngularFireModule } from '@angular/fire/compat';
-import { MolaAppDashboardModule } from '../../projects/blank/src/lib/app-dashboard.module';
 
+import { MolaAppDashboardModule } from '../../projects/blank/src/lib/app-dashboard.module';
 import { MolaAppModule } from '../../projects/blank/src/lib/app.module';
 import { AppComponent } from '../../projects/blank/src/lib/app.component';
 import { OfflineComponent } from './offline/offline.component';
