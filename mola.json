@@ -5,5 +5,15 @@
   "deployTarget": "github",
   "locales": ["en-US"],
   "skins": ["light"],
-  "soul": "bootstrap"
+  "soul": "bootstrap",
+  "database": {
+    "collections": [
+      "options",
+      "categories",
+      "tags",
+      "pages",
+      "posts",
+      "profiles"
+    ]
+  }
 }
