@@ -1,0 +1,46 @@
+{
+  "admin": {
+    "description": "I am an admin, my level is 5.",
+    "status": "publish",
+    "id": "admin",
+    "thumbnails": {
+      "default": {
+        "name": "default",
+        "src": "https://www.gravatar.com/avatar/a32013da6c45af0d9c7c3c06867bdbac?d=retro"
+      }
+    },
+    "type": "default",
+    "uid": "dSNX87UKfkNlKMlZCklLsU3crkg2",
+    "createdAt": "2021-08-30T13:11:28.580Z",
+    "role": "admin",
+    "email": "admin@lamnhan.com",
+    "counting": {
+      "posts_article": 1,
+      "posts_default": 1,
+      "videos_default": 9
+    },
+    "updatedAt": "2021-09-19T03:40:49.519Z",
+    "title": "Admin"
+  },
+  "test": {
+    "type": "default",
+    "counting": {
+      "posts_article": 2,
+      "posts_default": 2
+    },
+    "updatedAt": "2021-09-19T04:17:49.339Z",
+    "thumbnails": {
+      "default": {
+        "name": "default",
+        "src": "https://www.gravatar.com/avatar/4ecf9e918fa83184b009becccdcaf9b5?d=retro"
+      }
+    },
+    "description": "This is a test account.",
+    "title": "A Test Account",
+    "createdAt": "2021-09-16T14:49:46.420Z",
+    "status": "publish",
+    "uid": "VSS7lbK34gXFH5CeJeIy4uzy8dM2",
+    "id": "test",
+    "role": "subscriber"
+  }
+}
