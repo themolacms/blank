@@ -46,7 +46,7 @@
     "@lamnhan/ngx-useful": "0.0.35",
     "@lamnhan/schemata": "0.0.24",
     "@ngxs/store": "^3.7.2",
-    "@unistylus/bootstrap": "file:../../unistylus/bootstrap/dist/bootstrap/unistylus-bootstrap-0.0.12.tgz",
+    "@unistylus/bootstrap": "0.0.13",
     "@unistylus/core": "0.0.10",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
